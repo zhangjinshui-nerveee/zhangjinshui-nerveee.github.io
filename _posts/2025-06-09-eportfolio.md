@@ -1,6 +1,6 @@
 ---
 layout: post
-title: First blog
+title: "E-Portfolio: Simple is the ultimate sophistication"
 category: 
   - blog
 ---
