@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Learning to Teach: My Mentoring Experience"
+title: "Learn to Teach, Teach to Learn: My Mentoring Experience"
 category: 
   - blog
 ---
@@ -15,3 +15,5 @@ category:
 ## I used to panic when mentoring talented students
 
 ## My successful and not-so-successful mentoring experience
+
+## From learning how to teach, to realize that I can teach to learn
