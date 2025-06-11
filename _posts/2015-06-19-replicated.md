@@ -1,12 +1,13 @@
 ---
 layout: post
-title: Replicated - An Easier Path from SaaS to Enterprise
+title: First blog
+category: blog
 ---
 
 {{ page.title }}
 ================
 
-<p class="meta">19 Jun 2015 - San Francisco</p>
+<p class="meta">21 Sep 2021 - Durham</p>
 
 Over the last year I've had a chance to learn a lot more about early stage
 funding and made angel investments in a handful of startups. So far I've

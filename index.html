@@ -12,7 +12,8 @@ title: Jinshui Zhang
         The best way to reach me, whether seeking advice, collaboration, or just simply greeting, is via my email: jinshui.zhang@duke.edu </ul><br>
   <h1>Blog Posts</h1>
   <ul class="posts">
-    {% for post in site.posts %}
+    {% assign blog_posts = site.posts | where: "category", "blog" %}
+    {% for post in blog_posts %}
       <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
     {% endfor %}
   </ul>
