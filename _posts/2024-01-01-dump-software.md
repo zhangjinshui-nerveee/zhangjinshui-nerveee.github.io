@@ -12,13 +12,13 @@ category:
 
 "We should not fight our computers." -- How Linux Works.
 
-# We should have full control of our computer
+## We should have full control of our computer
 
 You can never understand every little detail or behavior of the software that you are using, I believe nobody can. However, we should reserve the right to do so instead of being told "xxx (the message on windows update". 
 
 Open-source is definitely crucial for this philosophy. 
 
-# Tools that can help us to be able to do so (What open-source software do I use as an electrical engineer?)
+## Tools that can help us to be able to do so (What open-source software do I use as an electrical engineer?)
 - vim
 - embedded development: anything but labview
 - cad: kicad, xx

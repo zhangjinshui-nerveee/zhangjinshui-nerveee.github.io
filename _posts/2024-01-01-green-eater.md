@@ -11,10 +11,10 @@ category:
 <p class="meta">21 Sep 2021 - Durham</p>
 
 
-# Definition of Green
+## Definition of Green
 
 Paradox between being buff / healthy and being green
 
-# Protein can be green, but unfortunately they are not so far
+## Protein can be green, but unfortunately they are not so far
 
-# software to monitor your carbon emission
+## software to monitor your carbon emission
