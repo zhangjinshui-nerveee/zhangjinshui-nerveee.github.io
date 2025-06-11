@@ -11,6 +11,13 @@ title: Jinshui Zhang
         . Advised by <a href="https://stephanmgoetz.github.io/">Prof. Stefan M Goetz</a>, I work on multi-cell power electronics and their applications on clean energy, green transportation, and neuroscience.<br>
         The best way to reach me, whether seeking advice, collaboration, or just simply greeting, is via my email: jinshui.zhang@duke.edu </ul><br>
 
+  <h1>Projects</h1>
+  <ul class="posts">
+    {% assign project_posts = site.posts | where: "category", "project" %}
+    {% for post in project_posts %}
+      <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
+    {% endfor %}
+  </ul>
   <h1>Blog Posts</h1>
   <ul class="posts">
     {% assign blog_posts = site.posts | where: "category", "blog" %}
