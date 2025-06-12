@@ -9,18 +9,22 @@ title: Jinshui Zhang
         Currently, I am a PhD student at Duke University in <a href="https://sites.google.com/view/bsel/home">Brain Stimulation Engineering Lab</a>. Under the guidance of <a href="https://stephanmgoetz.github.io/">Prof. Stefan M Goetz</a>, I get to explore how multi-cell power electronics can drive innovation in clean energy, green transportation, and even neuroscience! You can learn more of my work here <a href="assets/cv_jz.pdf">in my cv</a>. <br>
         I'm always excited to connect with new people, whether it's for a creative project or a new friendship. Please feel free to email me at <u>jinshui.zhang@duke.edu</u>.<br><br>
 
-  <h1>Projects</h1>
+  <h1>Selected Projects</h1>
   <ul class="posts">
     {% assign project_posts = site.posts | where: "category", "project" %}
     {% for post in project_posts %}
       <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
     {% endfor %}
   </ul>
-  <h1>Blog Posts</h1>
+  <h1>Blog</h1>
   <ul class="posts">
     {% assign blog_posts = site.posts | where: "category", "blog" %}
     {% for post in blog_posts %}
       <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
     {% endfor %}
+  </ul>
+  <h1>Open Source Projects</h1>
+  <ul class="posts">
+    <li><a href="https://github.com/zhangjinshui-nerveee/odv/">odv:</a> A simple, smooth oscilloscope data viewer.</li>
   </ul>
 </div>
