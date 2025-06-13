@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "I want to be a Green Eater"
+title: "How to be A Greener Eater"
 category: 
   - blog
 ---
@@ -8,11 +8,17 @@ category:
 {{ page.title }}
 ================
 
-<p class="meta">21 Sep 2021 - Durham</p>
+<p class="meta">10 Sep 2023 - Carrboro</p>
 
+When I was writing this blog, I kept asking myself: how to writing about the approval of (partial) veganism without being cringe? 
+
+
+Then I realized that lots of things or concepts that I truly admire are also cringe to me. 
+
+
+the appreciation of eating less meat and more vegetables is interpreted as pretentious in my mind. 
 
 ## Definition of Green
-
 Paradox between being buff / healthy and being green
 
 ## Protein can be green, but unfortunately they are not so far

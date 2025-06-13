@@ -13,7 +13,7 @@ category:
 ## AI can, will and probably is already, more intelligent than Humanity
 One day I was talking with myself: can AI become more intelligent than the humanity? One voice in my head said, come on, don't be stupid. AI is trained with the data generated from us, how can it become smarter than us? It sounds convincing, at first. But another voice threw up one question: Are we human beings becoming more intelligent than our ancestors? The answer to me is yes. Certainly we have all these great thinkers and scientists, but as a society, we are booming, much faster than any other creatures. The technology and science are having amazing innovations, and we are also getting better and better at dealing with our own minds. 
 
-In conclusion, we are getting more intelligent as a spieces, thanks to the knowledge and experience of people before our generation. If we can evolving based on the previous knowledge, so can AI. And the pace of it will be even faster than us, much faster, and no doubt it will become more intelligent than us if it isn't already. 
+In conclusion, we are getting more intelligent as a spieces, thanks to the knowledge and experience of people before our generation. If we can evolve with the previous knowledge, so can AI. And the pace of it will be even faster than us, much faster, and no doubt it will become more intelligent than us if it isn't already. 
 
 Will we be replaced or discarded? I don't know -- but I try my best to be optimistic. 
 
