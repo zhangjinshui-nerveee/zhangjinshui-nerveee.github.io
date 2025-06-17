@@ -16,7 +16,7 @@ The spirit of this blog is to have a direct statistic view of protein consumptio
 
 ## Protein can be green, but unfortunately they are not so far
 
-| Food | Greenhouse gas emissions (kg) per 100 grams of protein | Calories per gram of protein |
+| Food | CO2 emission (kg) / 100 g protein | Calories per gram of protein |
 | -- | -- | -- |
 | beef | 49.89 | 8.30 |
 | lamb | 19.85 | 10.1 |
