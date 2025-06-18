@@ -8,7 +8,7 @@ category:
 {{ page.title }}
 ================
 
-<p class="meta">10 Jun 2025 - Durham</p>
+<p class="meta">10 Jun 2025 - Carrboro</p>
 
 Have you ever struggled to settle down on the style of your personal website? Well, I have, a lot. There are just so many options on the internet, beautiful and free. I used to switch my website from one template to another all the time. I didn't do this for fun, every time I switch, I was literally urged to do so because I felt my previous one was so ugly and it disgusted me too much. If you felt the same way, shake hands. 
 

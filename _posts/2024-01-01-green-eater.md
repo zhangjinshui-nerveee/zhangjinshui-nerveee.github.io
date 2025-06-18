@@ -10,13 +10,12 @@ category:
 
 <p class="meta">10 Sep 2023 - Carrboro</p>
 
-When I was writing this blog, I kept asking myself: how to writing about the approval of (partial) veganism without being cringe? Then I decided that finding a reason for writing this blog is too hard. I will just list some numbers I collected -- reasons can be false, but math is always true.
+Protein is surely essential for us, especially for body builders and older people. Here is a great article about it. 
+<a href="https://www.economist.com/science-and-technology/2025/06/06/how-much-protein-do-you-really-need">how much protein do you really need?</a>
 
-The spirit of this blog is to have a direct statistic view of protein consumption and carbon emission.
+However, the guilt of consuming meat, mostly for carbon emissions, is heavy for me. This blog is to have a statistic view of the relationship between protein consumption and carbon emission.
 
-## Protein can be green, but unfortunately they are not so far
-
-| Food | CO2 emission (kg) / 100 g protein | Calories per gram of protein |
+| Food | CO2 (kg) per 100 g protein | Calories per g protein |
 | -- | -- | -- |
 | beef | 49.89 | 8.30 |
 | lamb | 19.85 | 10.1 |
@@ -36,7 +35,7 @@ The spirit of this blog is to have a direct statistic view of protein consumptio
 | hemp seeds | ?? | 20 |
 | peanuts (ground nuts) | 1.23 | 21.4 |
 
-Here is my easy takes on green proteins.
+Here are my takes on making the consumption of protein as organic as possible.
 0. A firm **NO** to anything related to **COWS**
 1. **REDUCE RED** meat consumption
 2. All **VEG**etables are better than any kind of meat

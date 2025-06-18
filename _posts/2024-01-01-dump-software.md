@@ -8,7 +8,7 @@ category:
 {{ page.title }}
 ================
 
-<p class="meta">21 Sep 2021 - Durham</p>
+<p class="meta">21 Sep 2024 - Carrboro</p>
 
 "We should not fight our computers." -- <em>How Linux Works.</em>
 

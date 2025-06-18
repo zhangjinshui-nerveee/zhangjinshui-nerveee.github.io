@@ -8,7 +8,7 @@ category:
 {{ page.title }}
 ================
 
-<p class="meta">21 Sep 2021 - Durham</p>
+<p class="meta">21 Sep 2021 - Carrboro</p>
 
 ## AI can, will and probably is already, more intelligent than Humanity
 One day I was talking with myself: can AI become more intelligent than the humanity? One voice in my head said, come on, don't be stupid. AI is trained with the data generated from us, how can it become smarter than us? It sounds convincing, at first. But another voice threw up one question: Are we human beings becoming more intelligent than our ancestors? The answer to me is yes. Certainly we have all these great thinkers and scientists, but as a society, we are booming, much faster than any other creatures. The technology and science are having amazing innovations, and we are also getting better and better at dealing with our own minds. 
