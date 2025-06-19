@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Computers should not be mysterious, or slave us"
+title: "Computers should not be scary or mysterious"
 category: 
   - blog
 ---
@@ -21,13 +21,10 @@ Due to my work needs, I still have to do most of my work on Windows -- that migh
 
 I can list so many things that Windows has surprised me with. Hopefully someday I can get rid of it, but now I am stuck due to the necessary use of LabVIEW FPGA development, Altium Designer. I believe there are lots of people like me, we really don't have a choice on which os to use. 
 
-However, we do indeed have a choice on other softwares, softwares that are easier to understand and customize. After all, the softwares serve us instead of the opposite way. I don't think we should be trained by the softwares. It just does not make sense to me that we have to learn or even guess what results our software might give us. 
+However, we do indeed have a choice on other software, software that are easier to understand and customize. After all, the software serve us instead of the opposite. I don't think we should be trained by the software. It just does not make sense to me that we have to learn or even guess what results our software might give us. 
 
 We may never be able to understand all the little details or behaviors of the software we are using. However, we should reserve the right to be able to do so. Open-source is crucial for this philosophy. Here I share some tools that I believe fit this principle.
 - vim
-- embedded development (if allowed a choice): anything but labview
+- embedded development (if allowed a choice): anything but LabVIEW. If you can, use your terminal plus vim as an editor.
 - cad: kicad, tinkercad
-- terminal. Microsoft is a notorious company, however, their powershell is decent to use. (Of course, it might not be on the same level of bash or zsh, but it's much better than windows explorer.)
-- minimized use of ai. Use ai purposefully and cautiously.
-
-
+- terminal. Microsoft is a notorious company, however, their powershell is fairly neat. (Of course, it might still not be as good as bash or zsh, but it's much better than other microsoft products.)
