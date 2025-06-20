@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Optimized monophasic pulses with equivalent electric field for rapid-rate transcranial magnetic stimulation"
+title: "Energy-optimized monophasic pulses with equivalent electric field"
 category: 
   - publication
 ---
