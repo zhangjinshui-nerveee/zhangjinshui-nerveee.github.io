@@ -27,5 +27,6 @@ This is the work for a competition funded by GaN Systems (now a part of Infineon
 ## Stackable LLC DC-DC Converter
 <img src="/images/posts/industrial_experience/llc_stackable.png">
 *A stackable isolated dc-dc converter.*
+
 I was so bored when I already submitted my thesis and waiting for my visa to fly to USA. And I suddely decided to do something different about LLC, a topic which I don't actually know much about. And LLC was everywhere. Eventually I figured out a way to connect different boards with one connector while parallel their output (thanks to gorgeous Taobao, that might be the only thing I miss here in America). There isn't actually any outcome from this prototype, except some fun for myself.
 
