@@ -27,6 +27,5 @@ category:
 1. Working principle of cascaded double H birdge circuit
 2. Modeling of LRC circuit dynamics
 
-<br><br>
 ## Essence of This Paper
 We digged a little deeper on the parallelization process of cascaded double H bridge circuit and realized that it can be categorized into two scenarios depending on the time constant of the circuit. We also engineered planar magnetics to mitigate the current surge during this process.
