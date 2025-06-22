@@ -24,6 +24,7 @@ category:
 ## Prerequisite Knowledge
 1. Working principle of cascaded double H birdge circuit
 2. Modeling of LRC circuit dynamics
+<br>
 
 
 ## Essence of This Paper
