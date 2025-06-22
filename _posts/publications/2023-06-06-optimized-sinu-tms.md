@@ -12,7 +12,6 @@ category:
 
 <p style="color: gray; font-size: smaller;"><em>Selected Publications, but in Human Language</em> is a section where I introduce my publications with words that are as direct and simple as possible. I will assume that you already know the context of this paper.</p>
 
-```
 @article{wang2023optimized,
   title={Optimized monophasic pulses with equivalent electric field for rapid-rate transcranial magnetic stimulation},
   author={Wang, Boshuo and Zhang, Jinshui and Li, Zhongxi and Grill, Warren M and Peterchev, Angel V and Goetz, Stefan M},
@@ -23,7 +22,7 @@ category:
   year={2023},
   publisher={IOP Publishing}
 }
-```
+
 This paper can be downloaded <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC10464893/pdf/nihms-1906682.pdf">here</a>.
 
 ## Prerequisite Knowledge

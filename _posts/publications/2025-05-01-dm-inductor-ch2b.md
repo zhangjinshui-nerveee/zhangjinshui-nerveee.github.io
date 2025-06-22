@@ -12,7 +12,7 @@ category:
 
 <p style="color: gray; font-size: smaller;"><em>Selected Publications, but in Human Language</em> is a section where I introduce my publications with words that are as direct and simple as possible. I will assume that you already know the context of this paper.</p>
 
-```
+
 @article{zhang2024analytical,
   title={Analytical Model and Planar Magnetic Solution for Parallelization Surges in Switched-Capacitor and Series/Parallel Multilevel Circuits},
   author={Zhang, Jinshui and Wang, Boshuo and Tian, Xiaoyang and Peterchev, Angel V and Goetz, Stefan M},
@@ -20,7 +20,7 @@ category:
   year={2024},
   publisher={IEEE}
 }
-```
+
 ## Prerequisite Knowledge
 1. Working principle of cascaded double H birdge circuit
 2. Modeling of LRC circuit dynamics
