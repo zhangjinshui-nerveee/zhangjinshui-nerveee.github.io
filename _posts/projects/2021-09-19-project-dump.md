@@ -31,7 +31,7 @@ This is the work for a competition funded by GaN Systems (now a part of Infineon
 I was so bored when I already submitted my thesis and waiting for my visa to fly to USA. And I suddely decided to do something different about LLC, a topic which I don't actually know much about. And LLC was everywhere. Eventually I figured out a way to connect different boards with one connector while parallel their output (thanks to gorgeous Taobao, that might be the only thing I miss here in America). There isn't actually any outcome from this prototype, except some fun for myself.
 
 ## Super-conductor mag-lev car
-<img src="/images/posts/industrial_experience/super_conductor_magrail.jpeg">
+<img src="/images/posts/superconductor_camp/super_conductor_magrail.jpeg">
 *A maglev rail car.*
 
 I was leading a tech-camp in 2016 summer on superconductor technologies. This is one of our major demonstrations -- a rail car with a superconductor base floating and racing on a track made with 20,000 magnets. The base is filled with liquid nitrogen to keep itself cool. The propeller is a remotely controlled electric fan.
