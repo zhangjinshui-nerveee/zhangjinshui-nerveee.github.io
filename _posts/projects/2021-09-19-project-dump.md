@@ -9,7 +9,7 @@ category:
 ================
 
 <p class="meta">09 Sep 2021 - Xi'an</p>
-Before my phd, I have worked hard through my way in both industry and academia. I have enjoyed some of them, but not passionate enough to write separate blogs for them. So here in this article, I will just dump every major prototype I have developed or led with a brief introduction. I doubt that anyone now would be interested in them anymore -- power electronics is moving really fast nowadays. But in case you are indeed interested, I still have their design documents, and am ready to give them away for free -- just shoot me an email.
+Before my phd, I have worked hard my way through in both industry and academia. This blog collects most major prototypes I have developed or led with a brief introduction. I am not actively working on them anymore. <u>However, in case you might be interested in any of them, I still have their design documents, and am ready to give them away for free -- just shoot me an email.</u>
 
 ## Totem-Pole Power Factor Correction Rectifier
 <img src="/images/posts/industrial_experience/SiC_totem_pole_prototype_Aside.png">
@@ -30,3 +30,8 @@ This is the work for a competition funded by GaN Systems (now a part of Infineon
 
 I was so bored when I already submitted my thesis and waiting for my visa to fly to USA. And I suddely decided to do something different about LLC, a topic which I don't actually know much about. And LLC was everywhere. Eventually I figured out a way to connect different boards with one connector while parallel their output (thanks to gorgeous Taobao, that might be the only thing I miss here in America). There isn't actually any outcome from this prototype, except some fun for myself.
 
+## Super-conductor mag-lev car
+<img src="/images/posts/industrial_experience/super_conductor_magrail.jpeg">
+*A maglev rail car.*
+
+I was leading a tech-camp in 2016 summer on superconductor technologies. This is one of our major demonstrations -- a rail car with a superconductor base floating and racing on a track made with 20,000 magnets. The base is filled with liquid nitrogen to keep itself cool. The propeller is a remotely controlled electric fan.
