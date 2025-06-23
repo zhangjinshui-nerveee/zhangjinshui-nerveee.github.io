@@ -32,5 +32,8 @@ Prerequisite Knowledge
 - Monophasis TMS pulse works the best but has a high conduction loss.
 - Loss heats up TMS coil and limits the repetitive rate.
 
-We tweaked a sinusoidal waveform by giving it a long pre-phase to slowly charge the current in the opposite direction to the main phase (which is short). So we can have a similar electric field in the brain but the current is shifted down by almost half. If you know how to calculate the RMS value of a signal, you will see what a great difference this approach made to the current RMS value, almost 75% down, which is also the reduction of the coil loss.
-Thus, we can generate monophasic electric field (through the optimized sinusoidal current waveform) in our brain with a much higher rate.
+Novelty: We tweaked a sinusoidal waveform by giving it a long pre-phase to slowly charge the current in the opposite direction to the main phase (which is short). So we can have a similar electric field in the brain but the current is shifted down by almost half. If you know how to calculate the RMS value of a signal, you will see what a great difference this approach made to the current RMS value, almost 75% down, which is also the reduction of the coil loss. Thus, we can generate monophasic electric field (through the optimized sinusoidal current waveform) in our brain with a much higher rate.
+
+Significance: Before this work, it's hard to use monophasic pulses in repetitive TMS no matter how much people like it. However, since we can largely reduce the loss and heating in coil, it's doable now. 
+
+Limits: Using what device for these waveforms would be a head scratcher -- the device used in this paper, MPS-TMS, is only in lab stage and too expensive for general clinics.
