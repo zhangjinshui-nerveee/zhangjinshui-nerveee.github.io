@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Analytical Model and Planar Magnetic Solution for Parallelization Surges"
+title: "Planar Magnetics for Parallelization Surges in Switched-Capacitor MMC"
 category: 
   - publication
 ---
