@@ -32,3 +32,4 @@ We may never be able to understand all the little details or behaviors of the so
 - Inkscape: it's as functional as Adobe Illustrator, but free and open source.
 - terminal. Microsoft is a notorious company, however, their powershell is fairly neat. (Of course, it might still not be as good as bash or zsh, but it's much better than other microsoft products.)
 - wsl2: another decent outcome from MS. It's much better than running on a virtual machine, and it feels like a real Linux.
+- ai in terminal: gemini-cli is definitely big news. Though, it seems to me that it has too much power over my computer (read / write files). I would be cautious about it if I am ever going to use it. Instead, something simpler such as [shell-gpt](https://github.com/TheR1D/shell_gpt) would be more reasonable and safer to use. 
