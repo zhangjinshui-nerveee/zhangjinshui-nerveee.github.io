@@ -17,7 +17,8 @@ title: Jinshui Zhang
       <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
     {% endfor %}
   </ul>
-  <h1>Selected Publications: Explained in Human Language</h1>
+  <h1>Selected Publications – Straight to the Point</h1>
+  <p style="color: gray; font-size: smaller;">Here I explain my publications as directly and simply as possible. Their prerequisite knowledge, novelty, significance, and limits, will be covered.</p>
   <ul class="posts">
     {% assign publication_posts = site.posts | where: "category", "publication" %}
     {% for post in publication_posts %}
@@ -37,6 +38,5 @@ title: Jinshui Zhang
   <h1>Open Source Projects</h1>
   <ul class="posts">
     <li><a href="https://github.com/zhangjinshui-nerveee/odv/">odv:</a> A simple, smooth oscilloscope data viewer.</li>
-    <li><a href="https://tms-samt.github.io/">tms-samt:</a> TMS Motor Threshold (MT) Estimation App.</li>
   </ul>
 </div>
