@@ -24,11 +24,11 @@ category:
 }
 </div>
 
-Prerequisite Knowledge
+**Prerequisite Knowledge**
 1. Working principle of cascaded double H bridge circuit
 
-Novelty: As it can enable parallel connection between modules, the cascaded double H bridge (CH2B) circuit can achieve sensorless module balancing. However, it needs eight transistors while the original H bridge needs only four -- which scares people away from using it. Here we invented a new module strucutre, four transistor -- not eight, not seven, not six, not five, just four -- to achieve the same functionality of sensorless module balancing. 
+**Novelty**: As it can enable parallel connection between modules, the cascaded double H bridge (CH2B) circuit can achieve sensorless module balancing. However, it needs eight transistors while the original H bridge needs only four -- which scares people away from using it. Here we invented a new module strucutre, four transistor -- not eight, not seven, not six, not five, just four -- to achieve the same functionality of sensorless module balancing. 
 
-Significance: This invention put the parallel connectivity enabled MMC circuit back to the competition of large-scale applications, as it brings the number of transistors down to the same as H bridge.
+**Significance**: This invention put the parallel connectivity enabled MMC circuit back to the competition of large-scale applications, as it brings the number of transistors down to the same as H bridge.
 
 <p style="color: gray; font-size: smaller;">This paper is a draft for a conference. A more detailed technical paper is on its way out.</p>
