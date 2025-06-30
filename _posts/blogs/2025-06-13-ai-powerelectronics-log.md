@@ -23,7 +23,14 @@ We are at the dawn of the AI era.
 
 Here in this blog, I will record what has happened to my field of expertise, power electronics, before AI really took our place.
 
-## Using AI to assist design
+## AI for power electronics: offline design, online control
 - Gemini-Cli: it's huge. It has lots power, but it also needs lots of power, and it seems to acquire so from you, secretly. I would be very cautious of using this tool -- it can do so many things without you knowing about it.
 
-## Using AI to assist control
+### Pioneers
+- minjie chen 
+
+## A Peek into AI's Power Consumption
+
+### Why are our brains so power efficient but current neural networks are not? 
+
+### Neumorphic computing: can it be our Savior?
