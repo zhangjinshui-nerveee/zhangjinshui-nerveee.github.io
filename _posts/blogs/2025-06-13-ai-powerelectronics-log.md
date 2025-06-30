@@ -27,7 +27,6 @@ Here in this blog, I will record what has happened to my field of expertise, pow
 - Gemini-Cli: it's huge. It has lots power, but it also needs lots of power, and it seems to acquire so from you, secretly. I would be very cautious of using this tool -- it can do so many things without you knowing about it.
 
 ### Pioneers
-- minjie chen 
 
 ## A Peek into AI's Power Consumption
 
