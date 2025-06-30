@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Greener Eater"
+title: "Greener eater"
 category: 
   - blog
 ---

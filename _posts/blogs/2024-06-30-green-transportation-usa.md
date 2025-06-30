@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Why is  Green Transportation Achievable in USA"
+title: "Why is green transportation so difficult in USA"
 category: 
   - blog
 ---
@@ -25,6 +25,7 @@ But I want to take a tiny step further on this thought: we drive because it is s
 It's not a philosophic question like chickens and eggs. It's not even an opinion, it's just simply true that the global temperature has been synchronizing with our carbon emission since ever. These data are public and anyone can get access to it. 
 
 <img src="/images/posts/blogs/carbon_emission.png">
+
 <a href = "https://www.stateofglobalair.org/report/soga-2024">Data to carbon emission and global temperature change</a>
 
 Fortunately, people do act on it, particularly Europeans and Asians -- two pioneers on public transportation. However, the greatest carbon emitter, USA, is not doing its job as well.

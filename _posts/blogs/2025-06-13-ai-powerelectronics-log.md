@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Dawn of AI: Perspective from A Power Electronics Engineer"
+title: "Dawn of AI: perspective from a power electronics engineer"
 category: 
   - blog
 ---
