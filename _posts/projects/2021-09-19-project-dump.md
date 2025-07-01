@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Collection of Projects Before PhD"
+title: "A Collection of Projects Before My PhD"
 category: 
   - project
 ---
