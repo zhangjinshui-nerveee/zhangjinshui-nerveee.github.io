@@ -8,7 +8,7 @@ category:
 {{ page.title }}
 ================
 
-<p class="meta">01 Mar 2024 - Durham</p>
+<p class="meta">06 Jun 2023 - Durham</p>
 
 <p style="color: gray; font-size: smaller;"><em>Selected Publications: Straight to the Point</em> is a section where I introduce my publications with words that are as direct and simple as possible. I will assume that you already know the context of this paper.</p>
 

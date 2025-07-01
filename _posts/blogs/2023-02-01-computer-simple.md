@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Computers should not be scary or mysterious"
+title: "Minimize the complication of my (Windows) computer: why and how"
 category: 
   - blog
 ---
@@ -8,7 +8,7 @@ category:
 {{ page.title }}
 ================
 
-<p class="meta">21 Sep 2024 - Carrboro</p>
+<p class="meta">01 Feb 2023 - Carrboro</p>
 
 "We should not fight our computers." -- <em>How Linux Works.</em>
 
@@ -31,5 +31,6 @@ We may never be able to understand all the little details or behaviors of the so
 <p style="color: gray; font-size: smaller;">I should have a blog recording my favorites usage/tips of latex.</p>
 - Inkscape: it's as functional as Adobe Illustrator, but free and open source.
 - terminal. Microsoft is a notorious company, however, their powershell is fairly neat. (Of course, it might still not be as good as bash or zsh, but it's much better than other microsoft products.)
-- wsl2: another decent outcome from MS. It's much better than running on a virtual machine, and it feels like a real Linux.
+- wsl2: another decent outcome from MS. It's much better than running on a virtual machine, and it feels like a real Linux. Plus, it's open sourced now.
 - ai in terminal: gemini-cli is definitely big news. Though, it seems to me that it has too much power over my computer (read / write files). I would be cautious about it if I am ever going to use it. Instead, something simpler such as [shell-gpt](https://github.com/TheR1D/shell_gpt) would be more reasonable and safer to use. 
+- Altium Designer: This might be the only closed-source software that I plan to keep using for a long term. Altium Designer is pretty neat; its design graps what it takes to design good electric stuff. 
