@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Readme to know more about this website :)"
+title: "Read me to know more about this website :)"
 category: 
   - blog
 ---

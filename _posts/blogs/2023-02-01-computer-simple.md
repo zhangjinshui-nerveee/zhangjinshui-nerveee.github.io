@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Minimize the complication of my (Windows) computer: why and how"
+title: "Getting along with my (Windows) computer: why and how"
 category: 
   - blog
 ---
