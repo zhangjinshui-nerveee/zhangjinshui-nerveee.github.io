@@ -25,8 +25,11 @@ Here in this blog, I will record what has happened to my field of expertise, pow
 
 ## AI for power electronics: offline design, online control
 - Gemini-Cli: it's huge. It has lots power, but it also needs lots of power, and it seems to acquire so from you, secretly. I would be very cautious of using this tool -- it can do so many things without you knowing about it.
-
-### Pioneers
+- DeepPCB: [DeepPCB](https://deeppcb.ai/) is the AI-powered, fully autonomous printed circuit board tool that accelerates the design process and ups industrial-grade PCB performance. Create and scale your product without compromise, and only pay for what you use.
+- Circuit Mind. [Their claim of speeding up by 75%](https://www.circuitmind.io/) seems to be more conservative than Deep PCB, thus more trustworthy (to me)?
+- AI for predictive maintainance and fault detection. Hard to validate.
+- AI for power delivery nextwork optimization. 
+- gpt like AI experts. So far (07/01/2025), nothing really good.
 
 ## A Peek into AI's Power Consumption
 
