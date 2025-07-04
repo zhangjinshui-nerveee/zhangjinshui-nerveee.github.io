@@ -9,7 +9,7 @@ category:
 ================
 
 <p class="meta">09 Sep 2021 - Xi'an</p>
-Before my phd, I have worked hard my way through in both industry and academia. This blog collects most major prototypes I have developed or led with a brief introduction. I am not actively working on them anymore. <u>However, in case you might be interested in any of them, I still have their design documents, and am ready to give them away for free -- just shoot me an email.</u>
+Before my phd, I have worked hard my way through in both industry and academia. This blog collects most major prototypes I have developed or led with a brief introduction. I am not actively working on them anymore. <u>However, in case you might be interested in any of them, I still have their design documents, and am ready to give them away for free -- just send me an email.</u>
 
 ## Totem-Pole Power Factor Correction Rectifier
 <img src="/images/posts/industrial_experience/SiC_totem_pole_prototype_Aside.png">
