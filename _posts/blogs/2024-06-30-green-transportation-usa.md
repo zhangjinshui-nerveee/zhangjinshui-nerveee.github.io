@@ -55,8 +55,8 @@ Besides the social image, the way how people purchase electric vehicles are also
 ## Solutions?
 I like the golden rules of recyle -- "Reduce, Reuse, Recycle". I think reforming transportation system here should follow the same philosophy. Reduce the needs for individual vehicles first. And taking the bus tomorrow (for the first time in your life?) would be a great start. 
 
-Also, as ambitious as I can get as an electrical engineer, I have to admit that social innovation or impact might have more significance in this fight -- be seen on your bikes, be seen walking, be seen taking a bus, and show up and vote if you can for more and better buses when you can. 
+Also, as ambitious as I can get as an electrical engineer, I have to admit that political / social revolution might have more significance in this fight  than techniques. Be seen on your bikes, be seen taking a walk, be seen riding a bus, show up and vote for more and better buses when you can. 
 
-**Would only myself taking action make any difference?**
+**How much difference can I make as a single person taking the bus or riding a bike?**
 
-**Yes, I don't know how much; but it's absolutely better than not.**
+**I don't know. But it's not zero."
