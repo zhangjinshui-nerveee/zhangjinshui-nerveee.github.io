@@ -13,7 +13,7 @@ category:
 We use "green" to describe activities that result in little or limited amount of carbon emissions and pollution. Green transportation, covers 
 - non-vehicle involved commuting such as walking, biking, scooting.
 - public transportation (buses, trains, subways).
-- electric vehicles (with green energy source). My father-in-law had to install solar panel on his roof because when he bought his Tesla and showed off this "green" car to his father-in-law, who, by the way, used to be an engineer, the old man immediately made fun of him, "hah, so you are now burning coals instead of fossil fuels?"
+- electric vehicles (with green energy source). My father-in-law had to install solar panel on his roof because when he bought his Tesla and showed off this "green" car to his father-in-law, who, by the way, used to be an engineer, the old man immediately made fun of him, "hah, so you are now burning coals instead of gas?"
 
 ## Why is green transportation important
 Every summer, we all have a same question: why is it so hot? We only ask questions when we don't understand. When we ask why it is hot this year, we are actually asking why it is hotter than last year. It is not a disillusion -- our global temperature are indeed rising steadily faster. In 2024, the average global temperature has risen a whole Celsius degree -- a new record. 
