@@ -10,8 +10,6 @@ category:
 
 <p class="meta">09 Jan 2022 - Durham</p>
 
-This website is going to be a complementary of my cv. As I have only very limited space in my cv for my research and projects, some of them may lose the technical or interesting part. I decided to complete these materials on this website, include demonstrations as well as stories (comedy or tragedy) behind all these "achievements" on my cv. Meanwhile, I can't be a real person on cv, I doubt that any one could. Therefore, I will also share some of my thoughts on work and real life, like this one. 
-
 This website will provide the following information.
 - Introduction to my projects. I will use as few jargons as possible for a general audience.
 - Explanation of my publications. Different from my published papers, I will try to introduce every paper straight to their point. 
