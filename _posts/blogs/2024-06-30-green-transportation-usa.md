@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Why is it so hard to have green transportation in USA?"
+title: "Green Transportation in USA: Difficulties and Mirages"
 category: 
   - blog
 ---

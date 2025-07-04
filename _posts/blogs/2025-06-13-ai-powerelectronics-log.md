@@ -13,11 +13,11 @@ category:
 ## AI can, will and probably is already, more intelligent than Humanity
 One day I was talking with myself: can AI become more intelligent than the humanity? One voice in my head said, come on, don't be stupid. AI is trained with the data generated from us, how can it become smarter than us? It sounds convincing, at first. But another voice threw up one question: Are we human beings becoming more intelligent than our ancestors? The answer to me is yes. Certainly we have all these great thinkers and scientists, but as a society, we are booming, much faster than any other creatures. The technology and science are having amazing innovations, and we are also getting better and better at dealing with our own minds. 
 
-In conclusion, we are getting more intelligent as a spieces, thanks to the knowledge and experience of people before our generation. If we can evolve with the previous knowledge, so can AI. And the pace of it will be even faster than us, much faster, and no doubt it will become more intelligent than us if it isn't already. 
+In conclusion, we are getting more intelligent as a spices, thanks to the knowledge and experience of people before our generation. If we can evolve with the previous knowledge, so can AI. And the pace of it will be even faster than us, much faster, and no doubt it will become more intelligent than us if it isn't already. 
 
 Will we be replaced or discarded? I don't know -- but I try my best to be optimistic. 
 
-People, especially those who are engineers like me, can feel the fear the most. We might still hold doubt on AI's true potential, but the fear is real. I have played Hades II a lot -- it's a toxic game, nobody should play it. But if you do play it, (spoiler warning), before getting to the ultimate boss typhoon, you have to fight through its offsprings, its tails and so. Basically, you get a taste of how terrifying this monster might be before you really face him. This is my feeling now. The AI tools we are working with are surely far away from replacing us, but you can tell how better it might get and how fast it is getting better. 
+People, especially those who are engineers like me, can feel the fear the most. We might still hold doubt on AI's true potential, but the fear is real. I have played Hades II a lot -- it's a toxic game, nobody should play it. But if you do play it, (spoiler warning), before getting to the ultimate boss typhoon, you have to fight through its offspring, its tails and so. Basically, you get a taste of how terrifying this monster might be before you really face him. This is my feeling now. The AI tools we are working with are surely far away from replacing us, but you can tell how better it might get and how fast it is getting better. 
 
 We are at the dawn of the AI era. 
 
@@ -28,11 +28,12 @@ Here in this blog, I will record what has happened to my field of expertise, pow
 - DeepPCB: [DeepPCB](https://deeppcb.ai/) is the AI-powered, fully autonomous printed circuit board tool that accelerates the design process and ups industrial-grade PCB performance. Create and scale your product without compromise, and only pay for what you use.
 - Circuit Mind. [Their claim of speeding up by 75%](https://www.circuitmind.io/) seems to be more conservative than Deep PCB, thus more trustworthy (to me)?
 - AI for predictive maintainance and fault detection. Hard to validate.
-- AI for power delivery nextwork optimization. 
+- AI for power delivery network optimization. 
 - gpt like AI experts. So far (07/01/2025), nothing really good.
 
 ## A Peek into AI's Power Consumption
+Here I will update news / opinions on the power consumption of AI computing.
 
 ### Why are our brains so power efficient but current neural networks are not? 
 
-### Neumorphic computing: can it be our Savior?
+### Neuromorphic computing: can it be our Savior?
