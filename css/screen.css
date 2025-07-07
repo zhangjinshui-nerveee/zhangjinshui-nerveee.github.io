@@ -16,7 +16,7 @@ html, body {
 }
 
 body {
-  background-color: white;
+  background-color: black;
   font: 13.34px helvetica, arial, clean, sans-serif;
   *font-size: small;
   text-align: center;
@@ -87,7 +87,7 @@ ul.posts {
 }
 
 .title {
-  color: #a00;
+  color: #00a;
   font-weight: bold;
   margin-bottom: 2em;
 }
