@@ -200,3 +200,66 @@ ul.posts {
   #related h2 {
     margin-bottom: 1em;
   }
+
+/*****************************************************************************/
+/*
+/* Dark Mode
+/*
+/*****************************************************************************/
+
+body.dark-mode {
+  background-color: #121212;
+  color: #eee;
+}
+
+body.dark-mode a {
+  color: #809fff;
+}
+
+body.dark-mode a:hover {
+  color: #eee;
+}
+
+body.dark-mode a:visited {
+  color: #d8bfff;
+}
+
+body.dark-mode .site .title a {
+  color: #ff8080;
+}
+
+body.dark-mode .site .title a:hover {
+  color: #eee;
+}
+
+body.dark-mode .site .title a.extra {
+  color: #aaa;
+}
+
+body.dark-mode .site .title a.extra:hover {
+  color: #eee;
+}
+
+body.dark-mode .site .footer {
+  border-top: 4px solid #333;
+}
+
+body.dark-mode #post pre {
+  border: 1px solid #555;
+  background-color: #222;
+}
+
+body.dark-mode #post code {
+  border: 1px solid #555;
+  background-color: #222;
+}
+
+body.dark-mode #post pre.terminal {
+  border: 1px solid #eee;
+  background-color: #111;
+  color: #eee;
+}
+
+body.dark-mode #post pre.terminal code {
+  background-color: #111;
+}
