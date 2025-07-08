@@ -111,6 +111,10 @@ ul.posts {
     color: black;
   }
 
+  .site .title a#light-\/--dark {
+    float: right;
+  }
+
   .site .meta {
     color: #aaa;
   }
