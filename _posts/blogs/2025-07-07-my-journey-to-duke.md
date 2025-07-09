@@ -25,7 +25,7 @@ Don't worry, I am still alive, and I haven't got poliomyelitis yet -- I guess th
 
 I have no idea how I end up here in North Carolina doing my PhD right now. It seems, even to me, to be a really really long way from a poor Chinese village to an American university. In my mind, I am still a little frog from a small pond. 
 
-I guess I should be grateful for schools, and the whole concept of education. To me, education doesn't just teaching knowledge. It provides an environment where everyone is supposed to be equal. Yeah, I know it might never be strictly equal, but it was designed to be so, and people agree on it. When you don't have it, you can ask for it, with integrity and dignity. Once you are treated equally in school, you are promised a more fair future out of school. 
+I guess I should be grateful for schools, and the whole concept of education. To me, education isn't just teaching knowledge. It provides an environment where everyone is supposed to be equal. Yeah, I know it might never be strictly equal, but it was designed to be so, and people agree on it. When you don't have it, you can ask for it, with integrity and dignity. Once you are treated equally in school, you are promised a more fair future out of school. 
 
 I didn't figure this out until very recent days, after spending so many years in schools, Chinese and American ones. Yet, my parents, one dropped out at fifth grade and another at sixth, somehow figured it out. Throughout my whole life, they always supported me; sometimes threw me back when I wanted to give up. It reminds me that in outdoor rock climbing, people who are spotting shouldn't try to catch the climber when they fall; instead, they just throw the climber onto the cushion. 
 
