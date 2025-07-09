@@ -29,6 +29,6 @@ I guess I should be grateful for schools, and the whole concept of education. To
 
 I didn't figure this out until very recent days, after spending so many years in schools, Chinese and American ones. Yet, my parents, one dropped out at fifth grade and another at sixth, somehow figured it out. Throughout my whole life, they always supported me; sometimes threw me back when I wanted to give up. It reminds me that in outdoor rock climbing, people who are spotting shouldn't try to catch the climber when they fall; instead, they just throw the climber onto the cushion. 
 
-I don't know how they managed to grasp the significance of education, given that they only got eleven years of that -- combined. They still can't speak mandarin (have been speaking Shandong dialect for fifty years and probably forever); they still don't know how to flip the camera to show me their corn field during video calls; but they are geniuses to me. 
+I don't know how my parents managed to grasp the significance of education, given that they only got eleven years of that -- combined. They still can't speak mandarin (have been speaking Shandong dialect for fifty years and probably forever); they still don't know how to flip the camera to show me their corn field during video calls; but they are geniuses to me. 
 
 What brought me here? Education, undoubtedly. But above all, I think I was given the two best educators from the start.
