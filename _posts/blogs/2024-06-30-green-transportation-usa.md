@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Green Transportation in USA: Difficulties and Mirages"
+title: "Green transportation in USA: difficulties and mirages"
 category: 
   - blog
 ---
