@@ -13,7 +13,7 @@ category:
 ## AI for power electronics
 In this section, I will list Ai tools designed for power electronics. 
 
-<p style="color: red; font-size: smaller;">I am not convinced yet that we really need AI based control algorithms for our power systems; this collection will mostly be for off-line designs.</p>
+<p style="color: gray; font-size: smaller;">I am not convinced yet that we really need AI based control algorithms for our power systems; this collection will mostly be for off-line designs.</p>
 
 
 - DeepPCB: [Website link](https://deeppcb.ai/) is the AI-powered, fully autonomous printed circuit board tool that accelerates the design process and ups industrial-grade PCB performance. Create and scale your product without compromise, and only pay for what you use.
