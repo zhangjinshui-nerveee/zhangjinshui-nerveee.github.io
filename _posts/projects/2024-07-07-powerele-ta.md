@@ -18,4 +18,4 @@ Yet, compared with other ECE subjects, mostly coding, where it's easy to get you
 After nearly twenty years, we finally brought the hand-on power electronics back to here at Duke. This semester (Spring 24), with the guidance of Prof. Peterchev, I designed a lab session from scratch. The goal is to guide students to build a closed loop boost circuit with a PWM IC UC2823. Most students finished and left the lab happily with their own boost circuit (pictures, I can't give the hardware away, even though I really wanted to). 
 
 It was an exciting experience; and I wish to share this joy with more people.
-<a href="../../assets/lab_session_ece_31_531_duke.pdf">Please find the slides here.</a>
+<a href="../../../../../assets/lab_session_ece_31_531_duke.pdf">Please find the slides here.</a>
