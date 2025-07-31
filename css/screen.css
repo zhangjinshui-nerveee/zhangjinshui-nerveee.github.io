@@ -267,29 +267,3 @@ body.dark-mode #post pre.terminal {
 body.dark-mode #post pre.terminal code {
   background-color: #111;
 }
-
-@media screen and (max-width: 42em) {
-  body {
-    font-size: 100%;
-  }
-
-  .site {
-    width: auto;
-    margin: 1em;
-  }
-
-  .site .title {
-    font-size: 1.5em;
-  }
-
-  #post img {
-    max-width: 100%;
-  }
-
-  .site .footer .contact,
-  .site .footer .rss {
-    float: none;
-    display: block;
-    margin-right: 0;
-  }
-}
