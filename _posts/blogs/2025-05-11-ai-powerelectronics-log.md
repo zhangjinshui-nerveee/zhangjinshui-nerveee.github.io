@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "AI & power electronics: states of the art"
+title: "AI in power electronics: what's new"
 category: 
   - blog
 ---
