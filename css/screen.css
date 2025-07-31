@@ -20,6 +20,12 @@ body {
   font: 13.34px helvetica, arial, clean, sans-serif;
   *font-size: small;
   text-align: center;
+  overflow-wrap: break-word;
+  word-wrap: break-word; /* For older browsers */
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  -ms-hyphens: auto;
+  hyphens: auto;
 }
 
 h1, h2, h3, h4, h5, h6 {
