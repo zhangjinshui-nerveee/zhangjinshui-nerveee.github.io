@@ -267,3 +267,25 @@ body.dark-mode #post pre.terminal {
 body.dark-mode #post pre.terminal code {
   background-color: #111;
 }
+
+@media screen and (max-width: 768px) {
+  body {
+    font-size: 16px;
+    -webkit-text-size-adjust: 100%;
+  }
+
+  .site {
+    width: 90%;
+    margin: 2em auto;
+    font-size: 100%;
+  }
+
+  #post img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  a {
+    text-decoration: underline;
+  }
+}
