@@ -9,13 +9,13 @@ category:
 ================
 
 <p class="meta">09 Sep 2021 - Xi'an</p>
-Before my phd, I have worked hard my way through in both industry and academia. This blog collects most major prototypes I have developed or led with a brief introduction. I am not actively working on them anymore. <u>However, in case you might be interested in any of them, I still have their design documents, and am ready to give them away for free -- just send me an email.</u>
+This blog introduces projects I have developed or led before my PhD. I am no longer working on them. <u>However, in case you might be interested in any of them, I still have their design documents, and am willing to share them for free -- just send me an email.</u>
 
 ## Totem-Pole Power Factor Correction Rectifier
 <img src="/images/posts/industrial_experience/SiC_totem_pole_prototype_Aside.png" style="background-color: white;">
 *A 3 kW totem-pole pfc rectifier.*
 
-This is a work of my one-year part-time internship with a local company in Xi'an. Not only just one prototype, I was also hired to give lectures of power electronics to their technicians -- I would have felt used, but luckily I actually liked teaching.
+This is a work of my one-year part-time internship with a local company based in Xi'an. Not only just one prototype, I was also hired to give lectures of power electronics to their technicians -- I would have felt used, but luckily I actually liked teaching.
 
 ## Compact GaN Rectifier
 <img src="/images/posts/industrial_experience/GaN_totem_pole_prototype_Aside.png" style="background-color: white;">
