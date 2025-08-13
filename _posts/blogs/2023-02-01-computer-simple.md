@@ -62,6 +62,9 @@ set nu
 set nobackup
 ```
 
+### copy / paste on wsl vim
+If you are using vim on wsl2, copying texts from vim to windows (such as a browser) might be tricky. I find nvim can solve this problem. Simply using nvim would do it.
+
 
 ## powershell setup
 
