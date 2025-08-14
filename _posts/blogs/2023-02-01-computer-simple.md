@@ -141,3 +141,15 @@ Write-Host "Compilation finished. PDF generated as '$baseName.pdf'."
 # ii "$baseName.pdf"
 ```
 Combining this powershell script with vim record function can level up your satisfaction from this.
+
+# WSL2
+A function that I miss of powershell is the invoke-item, or "ii". In my WSL2 system, I often need to open some .pdf / .png / .svg files. Since the windows already have a pdf reader or picture reader, I find it convinient to just use what I have on windows. 
+What I did is to add an alias in .zshrc or .bashrc to map ii to 'explorer.exe'. Put this line to .zshrc. 
+```
+alias ii='explorer.exe'
+```
+And next time you use ii function to files on WSL2, you will find it is opened with the default application on windows, such as 
+```
+ii main.pdf
+```
+My computer will pop up a sumatra window with main.pdf.
