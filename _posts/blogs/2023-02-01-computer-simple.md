@@ -153,3 +153,28 @@ And next time you use ii function to files on WSL2, you will find it is opened w
 ii main.pdf
 ```
 My computer will pop up a sumatra window with main.pdf.
+
+
+## How to use Times New Roman font in WSL2 (Debian)
+1. Edit apt sources in `/etc/apt/sources.list`, add `contrib non-free` to main sources, such as changing
+`deb http://deb.debian.org/debian bookworm main`
+to
+`deb http://deb.debian.org/debian bookworm main contrib non-free`
+2. sudo apt update
+3. sudo apt install ttf-mscorefonts-installer
+4. Refresh font cache
+`sudo fc-cache -fv`
+5. Should be able to see fonts.
+`fc-list | grep "Times New Roman"`
+Such as 
+`/usr/share/fonts/truetype/msttcorefonts/Times_New_Roman.ttf`
+
+To use Times fonts in matplotlib, there is a bit more extra work. 
+```
+font_path = "/usr/share/fonts/truetype/msttcorefonts/Times_New_Roman.ttf"
+times_new_roman = fm.FontProperties(fname=font_path)
+
+# Register the font globally
+fm.fontManager.addfont(font_path)
+plt.rcParams['font.family'] = times_new_roman.get_name()  # ensures all texts use it
+```
