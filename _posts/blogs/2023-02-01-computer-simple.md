@@ -55,6 +55,9 @@ set undofile
 " Start NERDTree when Vim is started without file arguments.
 autocmd StdinReadPre * let s:std_in=1
 autocmd VimEnter * if argc() == 0 && !exists('s:std_in') | NERDTree | endif
+" automatically compile tex file when saving 
+autocmd BufWritePost *.tex silent! !pdflatex -interaction=nonstopmode "%"
+
 
 set keywordprg=python3\ -m\ pydoc
 set nu
