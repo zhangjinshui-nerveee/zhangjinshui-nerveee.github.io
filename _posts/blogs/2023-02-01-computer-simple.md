@@ -181,3 +181,46 @@ times_new_roman = fm.FontProperties(fname=font_path)
 fm.fontManager.addfont(font_path)
 plt.rcParams['font.family'] = times_new_roman.get_name()  # ensures all texts use it
 ```
+
+# Arch
+I switched my laptop from windows + wsl (debian) to Arch Linux (Cinnamon) in Oct 2025. 
+The arch wiki plus chatgpt made the installation and post-installation very friendly.
+Here are some tricky problems I have overcome so far on my Arch linux.
+
+## Waking up from suspend trouble
+### Issue
+after waking up from suspend, 
+- can't open terminal app
+- can't open firefox app. When I run `firefox` command in terminal, it errors: `Authorization required, but no authorization protocol specified. Error: cannot open display: :0`
+- can't open nemo (file explorer)
+- can't copy ("+y) in nvim, error 
+  `clipboard: error evoking xclip: Authorization required, but no authorization prototype specified. Error can't open display:0/`
+
+### Solution
+Create a small systemd sleep hook to re-allow your user to access the X server and fix ownership.
+1. Create the hook:
+```
+sudo nano /usr/lib/systemd/system-sleep/fix-xauth
+```
+2. and paste the following code:
+```
+#!/bin/sh
+USERNAME=jinshui  # replace with your actual username
+case $1/$2 in
+  post/*)
+    # Fix .Xauthority permissions
+    chown $USERNAME:$USERNAME /home/$USERNAME/.Xauthority 2>/dev/null
+    chmod 600 /home/$USERNAME/.Xauthority 2>/dev/null
+
+    # Reauthorize user to access display :0
+    export DISPLAY=:0
+    sudo -u $USERNAME xhost +SI:localuser:$USERNAME >/dev/null 2>&1
+    ;;
+esac
+```
+3. make it executable
+```
+sudo chmod +x /usr/lib/systemd/system-sleep/fix-xauth
+```
+- What this does. After waking from suspend: Ensures your .Xauthority file is still owned by you. Re-adds your user to the list of clients authorized to connect to the X server (xhost +SI:localuser:$USER). Prevents “Authorization required” and “cannot open display” errors for Firefox, Nemo, terminals, and clipboard tools.
+- Verify it manually now. After a suspend (before applying the fix), try: `xhost +SI:localuser:$USER`. Then open Firefox or Nemo — it should work immediately. That confirms this hook will solve it permanently.
