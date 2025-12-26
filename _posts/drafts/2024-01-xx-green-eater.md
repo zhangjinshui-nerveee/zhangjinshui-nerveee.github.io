@@ -2,7 +2,7 @@
 layout: post
 title: "Greener eater"
 category: 
-  - blog
+  - draft
 ---
 
 {{ page.title }}

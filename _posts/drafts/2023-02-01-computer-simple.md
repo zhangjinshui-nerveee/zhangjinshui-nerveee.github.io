@@ -2,7 +2,7 @@
 layout: post
 title: "My favirote computer tools"
 category: 
-  - blog
+  - draft
 ---
 
 {{ page.title }}

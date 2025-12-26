@@ -2,7 +2,7 @@
 layout: post
 title: "Green transportation in USA: difficulties and mirages"
 category: 
-  - blog
+  - draft
 ---
 
 {{ page.title }}

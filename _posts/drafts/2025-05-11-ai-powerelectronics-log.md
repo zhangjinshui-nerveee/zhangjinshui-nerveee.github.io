@@ -2,7 +2,7 @@
 layout: post
 title: "AI in power electronics: what's new"
 category: 
-  - blog
+  - draft
 ---
 
 {{ page.title }}

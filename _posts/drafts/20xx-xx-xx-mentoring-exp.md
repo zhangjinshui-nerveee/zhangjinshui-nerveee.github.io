@@ -2,7 +2,7 @@
 layout: post
 title: "Learn to Teach, Teach to Learn: My Mentoring Experience"
 category: 
-  - blog
+  - draft
 ---
 
 {{ page.title }}
