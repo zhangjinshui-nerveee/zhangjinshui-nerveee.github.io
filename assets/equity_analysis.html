@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Equity Package Calculator</title>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.js"></script>
+<link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Sora:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --bg: #0e0f11;
+    --surface: #161719;
+    --surface2: #1e2023;
+    --border: rgba(255,255,255,0.07);
+    --border2: rgba(255,255,255,0.12);
+    --text: #f0f0ee;
+    --muted: #8a8a85;
+    --accent: #c8f060;
+    --accent2: #60c8f0;
+    --accent3: #f0906a;
+    --p1: #60c8f0;
+    --p2: #c8f060;
+    --p3: #f0906a;
+  }
+
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: 'Sora', sans-serif;
+    font-size: 14px;
+    min-height: 100vh;
+    padding: 40px 24px;
+  }
+
+  .app {
+    max-width: 860px;
+    margin: 0 auto;
+  }
+
+  header {
+    margin-bottom: 40px;
+  }
+
+  .eyebrow {
+    font-family: 'DM Mono', monospace;
+    font-size: 11px;
+    letter-spacing: 0.15em;
+    color: var(--accent);
+    text-transform: uppercase;
+    margin-bottom: 8px;
+  }
+
+  h1 {
+    font-size: 28px;
+    font-weight: 600;
+    letter-spacing: -0.02em;
+    line-height: 1.2;
+  }
+
+  h1 span { color: var(--muted); font-weight: 300; }
+
+  .subtitle {
+    margin-top: 8px;
+    color: var(--muted);
+    font-size: 13px;
+    line-height: 1.6;
+  }
+
+  .grid-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    margin-bottom: 16px;
+  }
+
+  @media (max-width: 600px) {
+    .grid-2 { grid-template-columns: 1fr; }
+    .pkg-grid { grid-template-columns: 1fr !important; }
+  }
+
+  .panel {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 20px;
+  }
+
+  .panel-title {
+    font-family: 'DM Mono', monospace;
+    font-size: 10px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin-bottom: 16px;
+  }
+
+  .pkg-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin-bottom: 16px;
+  }
+
+  .pkg-card {
+    background: var(--surface2);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 14px;
+    transition: border-color 0.15s;
+  }
+
+  .pkg-card.active-p1 { border-color: var(--p1); background: rgba(96,200,240,0.07); }
+  .pkg-card.active-p2 { border-color: var(--p2); background: rgba(200,240,96,0.07); }
+  .pkg-card.active-p3 { border-color: var(--p3); background: rgba(240,144,106,0.07); }
+
+  .pkg-name {
+    font-family: 'DM Mono', monospace;
+    font-size: 11px;
+    letter-spacing: 0.1em;
+    margin-bottom: 10px;
+  }
+  .pkg-name.c1 { color: var(--p1); }
+  .pkg-name.c2 { color: var(--p2); }
+  .pkg-name.c3 { color: var(--p3); }
+
+  .pkg-field { margin-bottom: 8px; }
+  .pkg-field label {
+    display: block;
+    font-size: 10px;
+    font-family: 'DM Mono', monospace;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin-bottom: 4px;
+  }
+  .pkg-field input[type=number] {
+    width: 100%;
+    background: var(--surface);
+    border: 1px solid var(--border2);
+    border-radius: 6px;
+    color: var(--text);
+    font-family: 'Sora', sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+    padding: 5px 8px;
+    outline: none;
+    transition: border-color 0.15s;
+  }
+  .pkg-field input[type=number]:focus { border-color: var(--accent); }
+
+  .pkg-select-btn {
+    width: 100%;
+    margin-top: 10px;
+    background: transparent;
+    border: 1px solid var(--border2);
+    border-radius: 6px;
+    color: var(--muted);
+    font-family: 'DM Mono', monospace;
+    font-size: 10px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    padding: 5px;
+    cursor: pointer;
+    transition: border-color 0.15s, color 0.15s;
+  }
+  .pkg-select-btn:hover { border-color: var(--border2); color: var(--text); }
+  .pkg-select-btn.sel-p1 { border-color: var(--p1); color: var(--p1); }
+  .pkg-select-btn.sel-p2 { border-color: var(--p2); color: var(--p2); }
+  .pkg-select-btn.sel-p3 { border-color: var(--p3); color: var(--p3); }
+
+  .slider-group { margin-bottom: 14px; }
+  .slider-group:last-child { margin-bottom: 0; }
+
+  .slider-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 6px;
+  }
+
+  .slider-lbl { font-size: 12px; color: var(--muted); }
+
+  .slider-val {
+    font-family: 'DM Mono', monospace;
+    font-size: 13px;
+    color: var(--text);
+    font-weight: 500;
+  }
+
+  input[type=range] {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 3px;
+    border-radius: 2px;
+    background: var(--surface2);
+    outline: none;
+    border: none;
+  }
+
+  input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background: var(--accent);
+    cursor: pointer;
+    border: 2px solid var(--bg);
+    transition: transform 0.1s;
+  }
+
+  input[type=range]::-webkit-slider-thumb:hover { transform: scale(1.2); }
+
+  .metrics-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    margin-bottom: 16px;
+  }
+
+  @media (max-width: 600px) {
+    .metrics-grid { grid-template-columns: repeat(2, 1fr); }
+  }
+
+  .metric {
+    background: var(--surface2);
+    border-radius: 8px;
+    padding: 12px;
+    border: 1px solid var(--border);
+  }
+
+  .metric-lbl {
+    font-size: 10px;
+    font-family: 'DM Mono', monospace;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin-bottom: 6px;
+  }
+
+  .metric-val {
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: -0.02em;
+  }
+
+  .metric-val.accent { color: var(--accent); }
+  .metric-val.up { color: var(--p2); }
+  .metric-val.down { color: var(--p3); }
+  .metric-val.neutral { color: var(--muted); }
+
+  .comparison-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 0;
+    border-bottom: 1px solid var(--border);
+    font-size: 13px;
+  }
+
+  .comparison-row:last-child { border-bottom: none; }
+  .comparison-row.selected { font-weight: 500; }
+
+  .badge {
+    font-family: 'DM Mono', monospace;
+    font-size: 10px;
+    padding: 2px 6px;
+    border-radius: 4px;
+  }
+
+  .badge-up { background: rgba(200,240,96,0.12); color: var(--p2); }
+  .badge-down { background: rgba(240,144,106,0.12); color: var(--p3); }
+
+  .chart-wrap {
+    position: relative;
+    width: 100%;
+    height: 220px;
+    margin-top: 4px;
+  }
+
+  .legend {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 12px;
+    flex-wrap: wrap;
+  }
+
+  .legend-item {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 12px;
+    color: var(--muted);
+  }
+
+  .legend-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+  }
+
+  .note {
+    margin-top: 20px;
+    padding: 14px 16px;
+    background: rgba(200,240,96,0.05);
+    border: 1px solid rgba(200,240,96,0.15);
+    border-radius: 8px;
+    font-size: 12px;
+    color: var(--muted);
+    line-height: 1.6;
+  }
+
+  .note strong { color: var(--accent); font-weight: 500; }
+
+  footer {
+    margin-top: 32px;
+    text-align: center;
+    font-family: 'DM Mono', monospace;
+    font-size: 10px;
+    color: rgba(138,138,133,0.4);
+    letter-spacing: 0.08em;
+  }
+</style>
+</head>
+<body>
+<div class="app">
+
+  <header>
+    <div class="eyebrow">Offer Analysis Tool</div>
+    <h1>Equity Package <span>Calculator</span></h1>
+    <p class="subtitle">Model total compensation at exit across three offer packages. Adjust assumptions to stress-test each scenario.</p>
+  </header>
+
+  <div class="pkg-grid" id="pkg-grid"></div>
+
+  <div class="grid-2">
+    <div class="panel">
+      <div class="panel-title">Assumptions</div>
+      <div class="slider-group">
+        <div class="slider-header">
+          <span class="slider-lbl">Strike price ($/share)</span>
+          <span class="slider-val" id="strike-out">$5.00</span>
+        </div>
+        <input type="range" min="0.5" max="20" step="0.5" value="5" id="strike" oninput="update()">
+      </div>
+      <div class="slider-group">
+        <div class="slider-header">
+          <span class="slider-lbl">Exit valuation</span>
+          <span class="slider-val" id="exit-out">$500M</span>
+        </div>
+        <input type="range" min="50" max="2000" step="50" value="500" id="exit" oninput="update()">
+      </div>
+      <div class="slider-group">
+        <div class="slider-header">
+          <span class="slider-lbl">Total shares outstanding</span>
+          <span class="slider-val" id="shares-out">10M</span>
+        </div>
+        <input type="range" min="5" max="100" step="5" value="10" id="shares" oninput="update()">
+      </div>
+      <div class="slider-group">
+        <div class="slider-header">
+          <span class="slider-lbl">Years vested (4yr cliff)</span>
+          <span class="slider-val" id="years-out">4 yrs</span>
+        </div>
+        <input type="range" min="1" max="4" step="1" value="4" id="years" oninput="update()">
+      </div>
+    </div>
+
+    <div class="panel">
+      <div class="panel-title">All packages at exit</div>
+      <div id="comparison"></div>
+      <div style="margin-top:14px; padding-top:14px; border-top: 1px solid var(--border);">
+        <div class="slider-header" style="margin-bottom:0;">
+          <span class="slider-lbl">Price per share at exit</span>
+          <span class="slider-val" id="pps-out" style="color:var(--accent);">—</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="metrics-grid">
+    <div class="metric">
+      <div class="metric-lbl">Total cash</div>
+      <div class="metric-val" id="m-cash">—</div>
+    </div>
+    <div class="metric">
+      <div class="metric-lbl">Options value</div>
+      <div class="metric-val accent" id="m-options">—</div>
+    </div>
+    <div class="metric">
+      <div class="metric-lbl">Total at exit</div>
+      <div class="metric-val" id="m-total">—</div>
+    </div>
+    <div class="metric">
+      <div class="metric-lbl">vs. Package 1</div>
+      <div class="metric-val neutral" id="m-diff">—</div>
+    </div>
+  </div>
+
+  <div class="panel">
+    <div class="panel-title">Total compensation vs. exit valuation</div>
+    <div class="legend" id="legend"></div>
+    <div class="chart-wrap">
+      <canvas id="chart"></canvas>
+    </div>
+  </div>
+
+  <div class="note">
+    <strong>Remember:</strong> Share count dilutes in future funding rounds. Your 0.40% today may be 0.20–0.25% at exit. Ask for the fully diluted cap table and any anti-dilution provisions before signing.
+  </div>
+
+  <footer>EQUITY CALCULATOR · FOR ILLUSTRATIVE PURPOSES ONLY</footer>
+
+</div>
+
+<script>
+const COLORS = ['#60c8f0','#c8f060','#f0906a'];
+const NAMES  = ['P1 — BASE','P2 — BALANCED','P3 — EQUITY'];
+const SEL_CLS = ['sel-p1','sel-p2','sel-p3'];
+const ACT_CLS = ['active-p1','active-p2','active-p3'];
+
+let packages = [
+  { base: 200000, options: 10000 },
+  { base: 190000, options: 14000 },
+  { base: 180000, options: 12000 },
+];
+let selectedPkg = 0;
+let chart;
+
+function buildPkgGrid() {
+  const grid = document.getElementById('pkg-grid');
+  grid.innerHTML = packages.map((p, i) => `
+    <div class="pkg-card ${selectedPkg === i ? ACT_CLS[i] : ''}" id="card-${i}">
+      <div class="pkg-name c${i+1}">${NAMES[i]}</div>
+      <div class="pkg-field">
+        <label>Base salary ($)</label>
+        <input type="number" id="base-${i}" value="${p.base}" min="0" step="1000" oninput="pkgChanged(${i})">
+      </div>
+      <div class="pkg-field">
+        <label>Options (count)</label>
+        <input type="number" id="opts-${i}" value="${p.options}" min="0" step="1000" oninput="pkgChanged(${i})">
+      </div>
+      <button class="pkg-select-btn ${selectedPkg === i ? SEL_CLS[i] : ''}" onclick="selectPkg(${i})">
+        ${selectedPkg === i ? '● selected' : 'select'}
+      </button>
+    </div>`).join('');
+}
+
+function pkgChanged(i) {
+  packages[i].base    = parseInt(document.getElementById('base-'+i).value) || 0;
+  packages[i].options = parseInt(document.getElementById('opts-'+i).value) || 0;
+  update();
+}
+
+function selectPkg(n) {
+  selectedPkg = n;
+  buildPkgGrid();
+  update();
+}
+
+function vestedOptions(options, years) {
+  if (years < 1) return 0;
+  return Math.round(options * Math.min(years, 4) / 4);
+}
+
+function optionValue(options, strike, exitVal, totalShares) {
+  const pps = exitVal / totalShares;
+  return options * Math.max(0, pps - strike);
+}
+
+function fmtM(n) {
+  if (n >= 1e6) return '$' + (n/1e6).toFixed(2) + 'M';
+  if (n >= 1000) return '$' + Math.round(n/1000) + 'k';
+  return '$' + Math.round(n);
+}
+
+function update() {
+  const strike      = parseFloat(document.getElementById('strike').value);
+  const exitVal     = parseFloat(document.getElementById('exit').value) * 1e6;
+  const years       = parseInt(document.getElementById('years').value);
+  const totalShares = parseFloat(document.getElementById('shares').value) * 1e6;
+
+  document.getElementById('strike-out').textContent  = '$' + strike.toFixed(2);
+  document.getElementById('exit-out').textContent    = '$' + document.getElementById('exit').value + 'M';
+  document.getElementById('years-out').textContent   = years + ' yr' + (years > 1 ? 's' : '');
+  document.getElementById('shares-out').textContent  = document.getElementById('shares').value + 'M';
+  document.getElementById('pps-out').textContent     = '$' + (exitVal / totalShares).toFixed(2) + '/share';
+
+  const totals = packages.map(p => {
+    const v = vestedOptions(p.options, years);
+    return p.base * years + optionValue(v, strike, exitVal, totalShares);
+  });
+  const p1total = totals[0];
+
+  const pkg    = packages[selectedPkg];
+  const vested = vestedOptions(pkg.options, years);
+  const cash   = pkg.base * years;
+  const optVal = optionValue(vested, strike, exitVal, totalShares);
+
+  document.getElementById('m-cash').textContent    = fmtM(cash);
+  document.getElementById('m-options').textContent = fmtM(optVal);
+  document.getElementById('m-total').textContent   = fmtM(cash + optVal);
+
+  const diff   = totals[selectedPkg] - p1total;
+  const diffEl = document.getElementById('m-diff');
+  diffEl.textContent = selectedPkg === 0 ? '—' : (diff >= 0 ? '+' : '') + fmtM(Math.abs(diff));
+  diffEl.className   = 'metric-val ' + (selectedPkg === 0 ? 'neutral' : diff > 0 ? 'up' : 'down');
+
+  const pkgColors = ['p1','p2','p3'];
+  document.getElementById('comparison').innerHTML = packages.map((p, i) => {
+    const ov = optionValue(vestedOptions(p.options, years), strike, exitVal, totalShares);
+    const t  = p.base * years + ov;
+    const d  = t - p1total;
+    const badge = i > 0
+      ? `<span class="badge ${d >= 0 ? 'badge-up' : 'badge-down'}">${d >= 0 ? '+' : ''}${fmtM(Math.abs(d))}</span>`
+      : '<span class="badge" style="color:var(--muted);background:var(--surface2)">baseline</span>';
+    return `<div class="comparison-row ${i === selectedPkg ? 'selected' : ''}">
+      <span style="color:var(--${pkgColors[i]})">${packages[i].base > 0 ? 'P'+(i+1) : 'P'+(i+1)}</span>
+      <span style="color:var(--muted);font-size:12px;">$${Math.round(p.base/1000)}k + ${p.options.toLocaleString()}</span>
+      <span>${fmtM(t)}</span>${badge}</div>`;
+  }).join('');
+
+  document.getElementById('legend').innerHTML = packages.map((p, i) =>
+    `<div class="legend-item"><div class="legend-dot" style="background:${COLORS[i]}"></div>P${i+1} · $${Math.round(p.base/1000)}k + ${p.options.toLocaleString()} opts</div>`
+  ).join('');
+
+  updateChart(strike, exitVal, totalShares, years);
+}
+
+function updateChart(strike, exitVal, totalShares, years) {
+  const pts    = [50,100,200,300,500,750,1000,1500,2000].map(v => v * 1e6);
+  const labels = pts.map(v => '$' + (v/1e6) + 'M');
+
+  const datasets = packages.map((p, i) => ({
+    label: 'P'+(i+1),
+    data: pts.map(ev => {
+      const v = vestedOptions(p.options, years);
+      return Math.round((p.base * years + optionValue(v, strike, ev, totalShares)) / 1000);
+    }),
+    borderColor: COLORS[i],
+    backgroundColor: COLORS[i] + '18',
+    tension: 0.35,
+    borderWidth: i === selectedPkg ? 2.5 : 1.5,
+    pointRadius: i === selectedPkg ? 4 : 2,
+    pointBackgroundColor: COLORS[i],
+    fill: false,
+  }));
+
+  if (chart) {
+    chart.data.labels   = labels;
+    chart.data.datasets = datasets;
+    chart.update('none');
+  } else {
+    chart = new Chart(document.getElementById('chart'), {
+      type: 'line',
+      data: { labels, datasets },
+      options: {
+        responsive: true,
+        maintainAspectRatio: false,
+        plugins: { legend: { display: false }, tooltip: {
+          backgroundColor: '#1e2023',
+          borderColor: 'rgba(255,255,255,0.08)',
+          borderWidth: 1,
+          titleColor: '#8a8a85',
+          bodyColor: '#f0f0ee',
+          callbacks: { label: ctx => ctx.dataset.label + ': $' + ctx.parsed.y.toLocaleString() + 'k' }
+        }},
+        scales: {
+          x: { ticks: { color: '#8a8a85', font: { size: 10, family: 'DM Mono' }, autoSkip: false, maxRotation: 45 }, grid: { color: 'rgba(255,255,255,0.04)' } },
+          y: { ticks: { color: '#8a8a85', font: { size: 10, family: 'DM Mono' }, callback: v => '$' + v + 'k' }, grid: { color: 'rgba(255,255,255,0.04)' } }
+        }
+      }
+    });
+  }
+}
+
+buildPkgGrid();
+update();
+</script>
+</body>
+</html>
